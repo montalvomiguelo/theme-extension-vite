@@ -1,0 +1,10 @@
+.x-counter {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.x-counter__count {
+  font-size: 1.8em;
+}

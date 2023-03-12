@@ -20,6 +20,8 @@ config/tunnel.pid
 
 # vite build output
 dist/
+extensions/*/assets
+extensions/*/snippets/vite-tag.liquid
 
 # extensions build output
 extensions/*/build

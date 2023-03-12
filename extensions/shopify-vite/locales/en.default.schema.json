@@ -1,0 +1,12 @@
+{
+  "blocks": {
+    "counter": {
+      "name": "Counter",
+      "settings": {
+        "start": {
+          "label": "Start"
+        }
+      }
+    }
+  }
+}

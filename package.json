@@ -1,19 +1,36 @@
 {
   "name": "my-cool-app",
   "version": "1.0.0",
+  "private": true,
   "main": "web/index.js",
   "license": "UNLICENSED",
   "scripts": {
+    "dev": "run-p -sr vite:dev shopify:dev",
+    "build": "run-s vite:build shopify:build",
+    "deploy": "run-s vite:build cleanup shopify:deploy",
     "shopify": "shopify",
-    "build": "shopify app build",
-    "dev": "shopify app dev",
-    "info": "shopify app info",
-    "generate": "shopify app generate",
-    "deploy": "shopify app deploy"
+    "shopify:build": "shopify app build",
+    "shopify:dev": "shopify app dev",
+    "shopify:info": "shopify app info",
+    "shopify:generate": "shopify app generate",
+    "shopify:deploy": "shopify app deploy",
+    "vite:dev": "vite",
+    "vite:build": "vite build",
+    "cleanup": "rimraf extensions/*/assets/*.{json,geetkeep}"
   },
   "dependencies": {
+    "@preact/signals": "^1.1.3",
     "@shopify/app": "3.44.1",
-    "@shopify/cli": "3.44.1"
+    "@shopify/cli": "3.44.1",
+    "preact": "^10.13.1",
+    "preact-custom-element": "^4.2.1"
   },
-  "author": "miguelmontalvo"
+  "author": "Miguel Montalvo",
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^4.4.0",
+    "vite": "^4.1.4",
+    "vite-plugin-shopify": "^2.0.1"
+  }
 }
