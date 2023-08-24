@@ -23,6 +23,7 @@
     "@preact/preset-vite": "^2.5.0",
     "concurrently": "^8.2.1",
     "vite": "^4.4.9",
+    "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-shopify": "^2.1.1"
   }
 }

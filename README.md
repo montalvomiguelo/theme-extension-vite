@@ -36,7 +36,8 @@ You can develop locally using your preferred package manager. Run one of the fol
 
 ```shell
 cd extensions/theme-extension
-pnpm run dev
+# you can use the notify flag to enable live reloading
+pnpm run dev --notify /tmp/extension.update
 ```
 
 Open the URL generated in your console. Once you grant permission to the app, you can start development (such as generating extensions).
