@@ -1,0 +1,24 @@
+{% liquid
+  render 'counter'
+
+  render 'vite-tag' with 'counter.css'
+  render 'vite-tag' with 'counter.jsx'
+-%}
+
+{% schema %}
+{
+  "name": "t:blocks.counter.name",
+  "target": "section",
+  "settings": [
+    {
+      "id": "start",
+      "type": "number",
+      "label": "t:blocks.counter.settings.start.label",
+      "default": 0
+    }
+  ],
+  "enabled_on": {
+    "templates": ["index"]
+  }
+}
+{% endschema %}

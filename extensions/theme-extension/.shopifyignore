@@ -1,0 +1,5 @@
+node_modules/
+assets/*.json
+frontend/
+package.json
+vite.config.js

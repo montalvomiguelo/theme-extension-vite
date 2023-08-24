@@ -17,54 +17,25 @@ This app template does little more than install the CLI and scaffold a resposito
 ### Requirements
 
 1. You must [download and install Node.js](https://nodejs.org/en/download/) if you don't already have it.
-1. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
-1. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
+2. You must install [pnpm](https://pnpm.io/) if you don't already have it.
+3. You must [create a Shopify partner account](https://partners.shopify.com/signup) if you don’t have one.
+4. You must create a store for testing if you don't have one, either a [development store](https://help.shopify.com/en/partners/dashboard/development-stores#create-a-development-store) or a [Shopify Plus sandbox store](https://help.shopify.com/en/partners/dashboard/managing-stores/plus-sandbox-store).
 
-### Installing the template
+### Setup
 
-This template can be installed using your preferred package manager:
-
-Using yarn:
-
-```shell
-yarn create @shopify/app
-```
-
-Using npm:
+Make sure to install the dependencies.
 
 ```shell
-npm init @shopify/app@latest
+pnpm install
 ```
-
-Using pnpm:
-
-```shell
-pnpm create @shopify/app@latest
-```
-
-This will clone the template and install the required dependencies.
-
 #### Local Development
 
 [The Shopify CLI](https://shopify.dev/docs/apps/tools/cli) connects to an app in your Partners dashboard. It provides environment variables and runs commands in parallel..
 
 You can develop locally using your preferred package manager. Run one of the following commands from the root of your app.
 
-Using yarn:
-
 ```shell
-yarn dev
-```
-
-Using npm:
-
-```shell
-npm run dev
-```
-
-Using pnpm:
-
-```shell
+cd extensions/theme-extension
 pnpm run dev
 ```
 
