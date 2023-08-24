@@ -17,3 +17,6 @@ api_version = "2023-07"
 
 [pos]
 embedded = false
+
+[build]
+dev_store_url = "vite-theme.myshopify.com"
