@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "license": "UNLICENSED",
+  "type": "module",
   "scripts": {
     "dev": "concurrently -r -k -P \"pnpm run shopify:dev {@}\" \"pnpm run vite:dev\" --",
     "build": "pnpm run vite:build && pnpm run shopify:build",
@@ -23,7 +24,7 @@
     "@preact/preset-vite": "^2.5.0",
     "concurrently": "^8.2.1",
     "vite": "^4.4.9",
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-shopify": "^2.1.1"
+    "vite-plugin-page-reload": "^0.1.0",
+    "vite-plugin-shopify": "^2.2.0"
   }
 }

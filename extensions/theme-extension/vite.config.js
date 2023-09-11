@@ -1,12 +1,14 @@
 import { defineConfig } from "vite";
 import shopify from "vite-plugin-shopify";
 import preact from "@preact/preset-vite";
-import fullReload from "vite-plugin-full-reload";
+import pageReload from "vite-plugin-page-reload";
 
 export default defineConfig({
   plugins: [
     shopify(),
     preact(),
-    fullReload("tmp/extension.update", { root: "/" }),
+    pageReload("/tmp/extension.update", {
+      delay: 1800,
+    }),
   ],
 });
