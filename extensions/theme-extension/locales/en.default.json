@@ -1,7 +1,10 @@
 {
-  "counter": {
-    "header": {
-      "title": "Counter"
+  "ratings": {
+    "stars": {
+      "label": "Ratings"
+    },
+    "home": {
+      "recommendationText": "Recommended Product!"
     }
   }
 }

@@ -4,16 +4,18 @@
   "license": "UNLICENSED",
   "scripts": {
     "shopify": "shopify",
-    "build": "shopify app build",
-    "dev": "shopify app dev",
+    "build": "pnpm theme-extension:build && shopify app build",
+    "dev": "concurrently -rkP 'shopify app dev {@}' 'pnpm:theme-extension:dev'",
+    "theme-extension:dev": "pnpm --filter theme-extension dev",
+    "theme-extension:build": "pnpm --filter theme-extension build",
     "info": "shopify app info",
     "generate": "shopify app generate",
     "deploy": "shopify app deploy"
   },
-  "dependencies": {
-    "@shopify/app": "3.48.4",
-    "@shopify/cli": "3.48.4"
-  },
   "author": "miguel",
-  "private": true
+  "private": true,
+  "packageManager": "pnpm@10.8.0+sha512.0e82714d1b5b43c74610193cb20734897c1d00de89d0e18420aebc5977fa13d780a9cb05734624e81ebd81cc876cd464794850641c48b9544326b5622ca29971",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }

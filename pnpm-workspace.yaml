@@ -1,4 +1,2 @@
 packages:
-  - 'web'
-  - 'web/frontend'
-  - 'extensions/*'
+ - 'extensions/*'
