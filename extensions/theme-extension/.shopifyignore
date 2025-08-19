@@ -1,0 +1,4 @@
+frontend/*
+node_modules/*
+package.json
+vite.config.ts
