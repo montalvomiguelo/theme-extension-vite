@@ -1,0 +1,8 @@
+{
+  "frontend/entrypoints/star-rating.ts": {
+    "file": "star-rating-l0sNRNKZ.js",
+    "name": "star-rating",
+    "src": "frontend/entrypoints/star-rating.ts",
+    "isEntry": true
+  }
+}
