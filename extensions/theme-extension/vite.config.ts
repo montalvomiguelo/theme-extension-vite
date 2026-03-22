@@ -3,6 +3,6 @@ import shopify from "vite-plugin-shopify";
 
 export default defineConfig({
   plugins: [
-    shopify({ tunnel: true }),
+    shopify(),
   ]
 });
